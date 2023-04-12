@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Lern</title>
+    <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary-subtle p-2 shadow-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand m-0 text-white" href="#">
+            <img src="image/C1.jpg" alt="fashion" width="30" height="30" style="border-radius:50%;" > Fashion </a>
+          
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Purchases
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Clothing department</a></li>
+                  <li><a class="dropdown-item" href="#">Accessories</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"> Shoes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Purchase vouchers</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <!-- Default form subscription -->
+<form class="text-center border border-light p-5" action="#!" style="width:650px; height:400px; border-radius:12px;">
+
+  <p class="h4 mb-2">Login User</p>
+
+  <p>Join our mailing list. We write rarely, but only the best content.</p>
+
+  <p>
+      <a href="" target="_blank">See the last newsletter</a>
+  </p>
+
+  <!-- Name -->
+  <input type="text" id="defaultSubscriptionFormPassword" class="form-control" placeholder="Name" >
+
+  <!-- Email -->
+  <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+  <!-- Sign in button -->
+  <button class="btn btn-info btn-block" type="submit">Sign in</button>
+
+
+</form>
+<!-- Default form subscription -->
+<br>
+<!--Section: Contact v.2-->
+<section class="mb-4" style="width:650px; height:400px;border:2px solid #ddd; float:right ; border-radius:12px; transform:translatey(-430px);">
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4" style="margin-top:10px;">Contact us</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5"> Please do not hesitate to contact us directly
+      .</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row " style="margin-bottom:20px; transform:translatey(-30px);" >
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row" style="margin-top:-40px;">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center" style="margin-top:-100px;">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Iraq Erbil </p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+ 7508820</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>contact@iraq.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+      <br>
+      <br>
+      <br>
+      <div class="card" style="width: 18rem; margin-top:20px;">
+        <img src="image/A21.jpg" class="card-img-top" alt="Fashion">
+        <div class="card-body">
+          
+            
+          <h5 class="card-title text-primary">Fashion Top</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top:20px;">
+        <img src="image/A22.jpg" class="card-img-top" alt="Fashion">
+        <div class="card-body">
+          <h5 class="card-title text-primary">Fashion Good</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top:-330px;">
+        <img src="image/A23.jpg" class="card-img-top" alt="Fashion" style="height:430px;">
+        <div class="card-body">
+          <h5 class="card-title text-primary">Beauty Fashion</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;margin-top:-330px;">
+        <img src="image/A24.jpg" class="card-img-top" alt="Fashion" style="height:420px;">
+        <div class="card-body ">
+          <h5 class="card-title text-primary">Fashion Pro</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      
+      
+      <div id="carouselExample" class="carousel slide" style="margin-top:700px;">
+        <div class="carousel-inner ">
+          <div class="carousel-item active b-2" >
+            <img src="image/B111.jpg" class="d-block w-90 m-auto " alt="Fashion" style="border-radius: 12px;">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="image/B112.jpg" class="d-block w-90 m-auto" alt="Fashion"style="border-radius: 12px;"  >
+          </div>
+          <div class="carousel-item">
+            <img src="image/B113.jpg" class="d-block w-90 m-auto" alt="Fashion" style="border-radius: 12px;" >
+          </div>
+          <div class="carousel-item" >
+            <img src="image/B114.jpg" class="d-block w-90 m-auto" alt="Fashion" style="border-radius: 12px;" >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <br>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">عرض المنتجات المميزة</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-bg-dark" id="offcanvasWithBothOptionsLabel">العرض المميز</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <img src="image/A25.jpg" alt="Fashion">
+  </div>
+</div>
+<br>
+
+<div class="img-container">
+  <h1 style="text-align:center ; margin-top:200px; text-shadow:0px 2px 5px black"> The Good Shose</h1>
+  <img src="image/D1.jpg" alt="" class="rounded-circle">
+   <img src="image/D2.jpg" alt="" class="rounded-circle">
+   <img src="image/D3.jpg" alt="" class="rounded-circle">
+  <img src="image/D4.jpg" alt="" class="rounded-circle" > 
+</div>
+</div>
+<button type="button" class="btn btn-primary position-relative" style="margin-left:480px;">
+  Price
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    30$
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+<button type="button" class="btn btn-primary position-relative" style="margin-left:220px;">
+  Price
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    45$
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+<button type="button" class="btn btn-primary position-relative" style="margin-left:240px;">
+  Price
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    40$
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+<button type="button" class="btn btn-primary position-relative" style="margin-left:210px;">
+  Price
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+    25$
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button>
+
+<br>
+<footer class="bg-light text-center text-white " style="margin-top:200px;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #333333;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+      <p>
+        
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Fashion.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+    
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
